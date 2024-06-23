@@ -1,0 +1,36 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Asegúrate de que no haya barras de desplazamiento */
+}
+
+.esquina {
+    position: fixed;
+    width: 110px;  /* Ajusta el tamaño de las imágenes según sea necesario */
+    height: 110px;
+    z-index: 1000; /* Asegura que las imágenes estén en la capa superior */
+}
+
+.esquina-superior-izquierda {
+    top: 0;
+    left: 0;
+}
+
+.esquina-superior-derecha {
+    top: 0;
+    right: 0;
+}
+
+.marquesina {
+    position: absolute;
+    top: 0;
+    left: 102px;  /* Ajusta este valor para mover la marquesina a la derecha de la imagen izquierda */
+    right: 100px; /* Ajusta este valor para mover la marquesina a la izquierda de la imagen derecha */
+    height: 110px; /* Ajusta la altura según sea necesario */
+    line-height: 100px; /* Alinea verticalmente el texto en el centro */
+    white-space: nowrap;
+    overflow: hidden;
+    border-radius: 15px; /* Ajusta el valor para redondear las esquinas */
+}
